@@ -49,7 +49,7 @@ def get_occupation(data, hometown)
     data.each do |stats|
       if stats["hometown"] == hometown
          occu << stats["occupation"]
-         return occu
+         occu
       end
     end 
   end
