@@ -31,16 +31,16 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   # code here
-  name = ""
+  counter = 0
   data.each do |seasons, data|
     data.each do |stats|
       if stats["hometown"] == hometown
-         name << stats["name"]
+         counter ++
          #binding.pry
       end
     end 
   end
-  name
+  counter
 end
 
 def get_occupation(data, hometown)
