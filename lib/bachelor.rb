@@ -61,13 +61,13 @@ def get_average_age_for_season(data, season)
   age = 0
   counter = 0
   average = 0
+  if seasons == season
   data.each do |seasons, data|
     data.each do |stats|
-      if stats["occupation"] == occupation
          name << stats["name"]
          #binding.pry
-      end
     end 
+  end
   end
   name
 end
