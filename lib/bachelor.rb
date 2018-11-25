@@ -66,7 +66,6 @@ def get_average_age_for_season(data, season)
       data.each do |stats|
          age += stats["age"].to_i
          counter += 1
-         #binding.pry
       end 
     end
   end
