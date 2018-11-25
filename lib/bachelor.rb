@@ -20,7 +20,7 @@ def get_contestant_name(data, occupation)
   name = ""
   data.each do |seasons, data|
     data.each do |stats|
-      if stats["occupation"] == "Cruise Ship Singer"
+      if stats["occupation"] == occupation
          name << stats["name"]
          #binding.pry
       end
