@@ -49,11 +49,11 @@ def get_occupation(data, hometown)
     data.each do |stats|
       if stats["hometown"] == hometown
          occu << stats["occupation"]
+         return occu
       end
     end 
   end
-  occu.split.first
-  occu.split.first
+  
 end
 
 def get_average_age_for_season(data, season)
